@@ -1,0 +1,127 @@
+{
+  "title": "Life and Works of St. Basil the Great",
+  "author": "",
+  "translator": "Rev. Blomfield Jackson, M.A. (1839-1907)",
+  "editor": "Philip Schaff (1819-1893)",
+  "year_published": 1895,
+  "publisher_info": "Gulu, Uganda",
+  "link": "https://www.ccel.org/ccel/s/schaff/npnf208.xml",
+  "chapters": [
+    {
+      "title": "Chronology",
+      "header": "Chronology",
+      "id": "chrn",
+      "triggers": [
+        {"tag": "div1", "attrs": {"title": "Chronological Table."}, "state": "title"}, 
+        {"data": "A.D.", "old": "title", "state": "body"}, 
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "A.D.": "\\small \\setlength{\\parskip}{2pt plus 1pt minus 1pt} A.D.",
+        "atCæsarea": "at Cæsarea",
+        " ": " ",
+        "  ": " ",
+        "\n ": "\n\\hspace*{2em}\\ "
+      }
+    },
+    {
+      "title": "The Life of St. Basil",
+      "header": "Life of St. Basil",
+      "id": "life",
+      "triggers": [
+        {"tag": "div2", "attrs": {"title": "Life."}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "vi.i.i-p6"}, "old": "title", "state": "body"}, 
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "—": " "
+      },
+      "substitutions": {
+        "(?m)([IVX]+)\\.---([\\w\\s\\.\"'“”‘’`,;-]+)(?=\\.?\n\n)": "\\\\section{\\1 - \\2}"
+      }
+    },
+    {
+      "title": "Preface to On the Holy Spirit",
+      "id": "prhs",
+      "triggers": [
+        {"tag": "div2", "attrs": {"id": "vii.i"}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "vii.i-p7"}, "old": "title", "state": "body"},
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {"&": "\\&"}
+    },
+    {
+      "title": "On the Holy Spirit",
+      "author": "St. Basil the Great",
+      "id": "onhs",
+      "triggers": [
+        {"tag": "div1", "attrs": {"id": "vii"}, "state": "title"}, 
+        {"tag": "div2", "attrs": {"id": "vii.ii"}, "old": "title", "state": "body"},
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&",
+        "Chapter XXV.\n\n\\textit{That Scripture uses the words ``in'' or\n``by,\"}\\textit{ἐν}\\textit{, cf. note on p. 3, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"}": "\\section[Chapter XXV - That Scripture uses the words ``in'' or\n``by,\" ἐν, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"]{Chapter XXV - That Scripture uses the words ``in'' or\n``by,\" ἐν\\footnote{cf. note on p. 3}, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"}",
+        "In how many ways ``}Through\\textit{whom'' is used;": "In how many ways ``Through whom'' is used;",
+        "note on p. 3": "note on p. \\pageref{fn:onhs:1}",
+        "\\textit{cf}. note on p. 15": "cf. note on p. \\pageref{fn:onhs:591}"
+      },
+      "substitutions": {
+        "(?m)^Chapter\\s*([IVX]+)\\.?\\s*\n\\s*([\\w\\s\\.\"'“”‘’`,;-]+)(?=\\.?\n\n)": "\\\\section{Chapter \\1 - \\2}",
+        "(?m)^Chapter\\s*([IVX]+)\\.?\\s*\n\\s*(?:\\\\text[bi][ft]\\{([\\w\\s\\.\"'“”‘’`,;-]+)\\.?\\})(?=\\.?(\n\n|\\\\footnote))": "\\\\section{Chapter \\1 - \\2}"
+      }
+    },
+    {
+      "title": "Preface to The Hexæmeron",
+      "id": "phex",
+      "triggers": [
+        {"tag": "div2", "attrs": {"id": "viii.i"}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "viii.i-p3"}, "old": "title", "state": "body"},
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {"&": "\\&"}
+    },
+    {
+      "title": "The Hexæmeron",
+      "author": "St. Basil the Great",
+      "id": "hexa",
+      "triggers": [
+        {"tag": "div1", "attrs": {"id": "viii"}, "state": "title"}, 
+        {"tag": "div2", "attrs": {"id": "viii.ii"}, "old": "title", "state": "body"},
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&",
+        "note on p.\n70": "note on p. \\pageref{fn:hexa:139}",
+        "note on p. 70": "note on p. \\pageref{fn:hexa:139}",
+        "note on p.\n90": "note on p. \\pageref{fn:hexa:247}"
+      },
+      "substitutions": {"(?<=\n)Homily\\s*([IVX]+)\\.?\\s+\\\\?t?e?x?t?i?t?{?([\\w\\s\\.\\\"\\“]+)}?(?=\n\n)": "\\\\section{Homily \\1 - \\2}"}
+    },
+    {
+      "title": "Preface to The Letters",
+      "id": "plet",
+      "triggers": [
+        {"tag": "div2", "attrs": {"id": "ix.i"}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "ix.i-p3"}, "old": "title", "state": "body"},
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {"&": "\\&"}
+    },
+    {
+      "title": "The Letters",
+      "author": "St. Basil the Great",
+      "id": "lett",
+      "triggers": [
+        {"tag": "div1", "attrs": {"id": "ix"}, "state": "title"}, 
+        {"tag": "div2", "attrs": {"id": "ix.ii"}, "old": "title", "state": "body"},
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&"
+      },
+      "substitutions": {"(?<=\n)Letter\\s*([IVX]+)\\.?\\s+\\\\?t?e?x?t?i?t?{?([\\w\\s\\.\\\"\\“]+)}?(?=\n\n)": "\\\\section{Letter \\1 - \\2}"}
+    }
+  ],
+  "debug": false
+}

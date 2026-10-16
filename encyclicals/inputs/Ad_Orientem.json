@@ -1,0 +1,126 @@
+{
+  "title": "Ad Orientem",
+  "subtitle": "A Collection of Papal Encyclicals Concerning the Eastern Churches",
+  "editor": "Jack Reamy",
+  "format": "book",
+  "chapters": [
+    {
+      "title": "Allatae Sunt",
+      "subtitle": "On the Observance of Oriental Rites",
+      "author": "Pope Benedict XIV",
+      "link": "https://www.papalencyclicals.net/ben14/b14allat.htm",
+      "footnotes": "parenthetical",
+      "replacements": {
+        "Supported Greek}}\n\n\\placespecialblock{\\textbf{Church": "Supported Greek Church",
+        "Island of\n\nCyprus": "Island of Cyprus"
+      },
+      "year": 1755
+    }, {
+      "title": "Omnem Sollicitudinem",
+      "subtitle": "On the Greek-Ruthenian Rite",
+      "author": "Pope Pius IX",
+      "link": "https://www.papalencyclicals.net/pius09/p9omnems.htm",
+      "year": 1874
+    }, {
+      "title": "Grande Munus",
+      "subtitle": "On Saints Cyril and Methodius",
+      "author": "Pope Leo XIII",
+      "link": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_30091880_grande-munus.html",
+      "footnotes": "none",
+      "triggers": [{"tag": "p", "attrs": {"align": "center"}, "old": "body", "state": "footnotes"}],
+      "replacements": {
+        "\nJourney to Rome\n": "\n\\textit{Journey to Rome}\n",
+        "\nDeath of Cyril\n": "\n\\textit{Death of Cyril}\n",
+        "\nPapal Decree\n": "\n\\textit{Papal Decree}\n",
+        "theCatholic": "the Catholic"
+      },
+      "year": 1880
+    }, {
+      "title": "Paterna Caritas",
+      "subtitle": "On Reunion with Rome",
+      "author": "Pope Leo XIII",
+      "link": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_25071888_paterna-caritas.html",
+      "year": 1888
+    }, {
+      "title": "Orientalium Dignitas",
+      "subtitle": "On the Churches of the East",
+      "author": "Pope Leo XIII",
+      "link": "https://www.papalencyclicals.net/leo13/l13orient.htm",
+      "triggers": [{"data": "1. Mt 2.2.", "old": "body", "state": "footnotes"}, {"data": "ENGLISH TRANSLATION: Edward Stickland, 1996.", "old": "footnotes", "state": "done"}],
+      "year": 1894
+    }, {
+      "title": "Praeclara Gratulationis Publicae",
+      "subtitle": "The Reunion of Christendom",
+      "author": "Pope Leo XIII",
+      "link": "https://www.papalencyclicals.net/leo13/l13praec.htm",
+      "year": 1894
+    }, {
+      "title": "Principi Apostolorum Petro",
+      "subtitle": "On St. Ephrem the Syrian",
+      "author": "Pope Benedict XV",
+      "link": "https://www.vatican.va/content/benedict-xv/en/encyclicals/documents/hf_ben-xv_enc_05101920_principi-apostolorum-petro.html",
+      "year": 1920
+    }, {
+      "title": "Rerum Orientalium",
+      "subtitle": "On the Promotion of Oriental Studies",
+      "author": "Pope Pius XI",
+      "link": "https://www.papalencyclicals.net/pius11/p11reror.htm",
+      "year": 1928
+    }, {
+      "title": "Lux Veritatis",
+      "subtitle": "On the Council of Ephesus",
+      "author": "Pope Pius XI",
+      "link": "https://www.papalencyclicals.net/pius11/p11verit.htm",
+      "footnotes": "parenthetical",
+      "replacements": {"*": "fy"},
+      "year": 1931
+    }, {
+      "title": "Orientalis Ecclesiae",
+      "subtitle": "On Saint Cyril, Patriarch of Alexandria",
+      "author": "Pope Pius XII",
+      "link": "https://www.vatican.va/content/pius-xii/en/encyclicals/documents/hf_p-xii_enc_09041944_orientalis-ecclesiae.html",
+      "year": 1944
+    }, {
+      "title": "Orientales Omnes Ecclesias",
+      "subtitle": "On the Three Hundred and Fiftieth Anniversary of the Reunion of the Ruthenian Church with the Apostolic See",
+      "author": "Pope Pius XII",
+      "link": "https://www.vatican.va/content/pius-xii/en/encyclicals/documents/hf_p-xii_enc_23121945_orientales-omnes-ecclesias.html",
+      "year": 1945
+    }, {
+      "title": "Sempiternus Rex Christus",
+      "subtitle": "On the Council of Chalcedon",
+      "author": "Pope Pius XII",
+      "link": "https://www.vatican.va/content/pius-xii/en/encyclicals/documents/hf_p-xii_enc_08091951_sempiternus-rex-christus.html",
+      "footnotes": "parenthetical and endnotes",
+      "replacements": {" John xvi, 28)": " (John xvi, 28)", "smoúsios": "homoousios", " k was": " It was"},
+      "year": 1951
+    }, {
+      "title": "Aeterna Dei Sapientia",
+      "subtitle": "The See of Peter as the Center of Christian Unity",
+      "author": "Pope John XXIII",
+      "link": "https://www.vatican.va/content/john-xxiii/en/encyclicals/documents/hf_j-xxiii_enc_11111961_aeterna-dei.html",
+      "footnotes": "parenthetical and endnotes",
+      "triggers": [{"data": "LATIN TEXT: ", "old": "footnotes", "state": "paused"}, {"data": "REFERENCES: ", "old": "paused", "state": "footnotes"}],
+      "year": 1961
+    }, {
+      "title": "Orientalium Ecclesiarum",
+      "subtitle": "Decree on the Catholic Churches of the Eastern Rite",
+      "author": "Pope Paul VI",
+      "link": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_orientalium-ecclesiarum_en.html",
+      "triggers": [{"tag": "center", "old": "", "state": "title"}, {"tag": "center", "old": "title", "state": "body"}],
+      "year": 1964
+    }, {
+      "title": "Orientale Lumen",
+      "subtitle": "To the Bishops, Clergy and Faithful to Mark the Centenary of Orientalium Dignitas of Pope Leo XIII",
+      "author": "Pope John Paul II",
+      "link": "https://www.vatican.va/content/john-paul-ii/en/apost_letters/1995/documents/hf_jp-ii_apl_19950502_orientale-lumen.html",
+      "year": 1995
+    }, {
+      "title": "Ut Unim Sint",
+      "subtitle": "On Commitment to Ecumenism",
+      "author": "Pope John Paul II",
+      "link": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_25051995_ut-unum-sint.html",
+      "year": 1995
+    }
+  ]
+}

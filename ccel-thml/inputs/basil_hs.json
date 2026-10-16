@@ -1,0 +1,74 @@
+{
+  "title": "On the Holy Spirit",
+  "author": "St. Basil the Great",
+  "translator": "Rev. Blomfield Jackson, M.A. (1839-1907)",
+  "editor": "Philip Schaff (1819-1893)",
+  "year_published": 1895,
+  "publisher_info": "Crownedge Printing\\\\\nGulu, Uganda",
+  "link": "https://www.ccel.org/ccel/s/schaff/npnf208.xml",
+  "margins": "inner=0.8in, outer=.75in, top=.75in, bottom=.66in",
+  "chapters": [
+    {
+      "title": "Chronology",
+      "header": "Chronology",
+      "author": "",
+      "id": "chrn",
+      "triggers": [
+        {"tag": "div1", "attrs": {"title": "Chronological Table."}, "state": "title"}, 
+        {"data": "A.D.", "old": "title", "state": "body"}, 
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "A.D.": "\\small \\setlength{\\parskip}{2pt plus 1pt minus 1pt} A.D.",
+        "atCæsarea": "at Cæsarea",
+        " ": " ",
+        "  ": " ",
+        "\n ": "\n\\hspace*{2em}\\ "
+      }
+    },
+    {
+      "title": "Preface to On the Holy Spirit",
+      "author": "",
+      "id": "prhs",
+      "triggers": [
+        {"tag": "div2", "attrs": {"id": "vii.i"}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "vii.i-p7"}, "old": "title", "state": "body"},
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {"&": "\\&"}
+    },
+    {
+      "title": "On the Holy Spirit",
+      "author": "St. Basil the Great",
+      "id": "onhs",
+      "triggers": [
+        {"tag": "div1", "attrs": {"id": "vii"}, "state": "title"}, 
+        {"tag": "div2", "attrs": {"id": "vii.ii"}, "old": "title", "state": "body"},
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&",
+        "Chapter XXV.\n\n\\textit{That Scripture uses the words ``in'' or\n``by,\"}\\textit{ἐν}\\textit{, cf. note on p. 3, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"}": "\\section[Chapter XXV - That Scripture uses the words ``in'' or\n``by,\" ἐν, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"]{Chapter XXV - That Scripture uses the words ``in'' or\n``by,\" ἐν\\footnote{cf. note on p. 3}, in place of\n``with.\" Wherein also it is proved that the word\n``and'' has the same force as ``with.\"}",
+        "In how many ways ``}Through\\textit{whom'' is used;": "In how many ways ``Through whom'' is used;",
+        "note on p. 3}": "note on p. \\pageref{fn:onhs:1}}",
+        "note on page 3, on μετά and σόν": "note on p. \\pageref{fn:onhs:1}, on μετά and σύν",
+        "Note on Chapter iii. p. 4.": "Note on Chapter iii. p. \\pageref{fn:onhs:16}.",
+        "note on p. 5.": "note on p. \\pageref{fn:onhs:31}.",
+        "note on page 7.": "note on p. \\pageref{fn:onhs:61}.",
+        "note on p. 9.": "note on p. \\pageref{fn:onhs:87}.",
+        "note on p. 15.": "note on p. \\pageref{fn:onhs:211}.",
+        "note on p. 17.": "note on p. \\pageref{fn:onhs:231}.",
+        "note on p. 27 ": "note on p. \\pageref{fn:onhs:566} ",
+        "Note on p. 29.": "note on p. \\pageref{fn:onhs:395}.",
+        "note on p. .": "note on p. \\pageref{fn:onhs:103}.",
+        "κήουγμα": "κήρυγμα"
+      },
+      "substitutions": {
+        "(?m)^Chapter\\s*([IVX]+)\\.?\\s*\n\\s*([\\w\\s\\.\"'“”‘’`,;-]+)(?=\\.?\n\n)": "\\\\section{Chapter \\1 - \\2}",
+        "(?m)^Chapter\\s*([IVX]+)\\.?\\s*\n\\s*(?:\\\\text[bi][ft]\\{([\\w\\s\\.\"'“”‘’`,;-]+)\\.?\\})(?=\\.?(\n\n|\\\\footnote))": "\\\\section{Chapter \\1 - \\2}",
+        "\\\\section": "\\\\setcounter{footnote}{0}\\\\section"
+      }
+    }
+  ],
+  "debug": false
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Aeterna Dei Sapientia",
+  "subtitle": "The See of Peter as the Center of Christian Unity",
+  "author": "Pope John XXIII",
+  "link": "https://www.vatican.va/content/john-xxiii/en/encyclicals/documents/hf_j-xxiii_enc_11111961_aeterna-dei.html",
+  "footnotes": "parenthetical and endnotes",
+  "triggers": [{"data": "LATIN TEXT:", "old": "footnotes", "state": "paused"}, {"data": "REFERENCES:", "old": "paused", "state": "footnotes"}],
+  "format": "chapter",
+  "debug": true
+}

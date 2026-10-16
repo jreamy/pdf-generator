@@ -1,0 +1,50 @@
+{
+  "title": "Hexæmeron",
+  "author": "St. Basil the Great",
+  "translator": "Rev. Blomfield Jackson, M.A. (1839-1907)",
+  "editor": "Philip Schaff (1819-1893)",
+  "year_published": 1895,
+  "publisher_info": "Crownedge Printing\\\\\nGulu, Uganda",
+  "link": "https://www.ccel.org/ccel/s/schaff/npnf208.xml",
+  "margins": "inner=0.8in, outer=.70in, top=.75in, bottom=.66in",
+  "chapters": [
+    {
+      "title": "Preface to The Hexæmeron",
+      "id": "phex",
+      "triggers": [
+        {"tag": "div2", "attrs": {"id": "viii.i"}, "state": "title"}, 
+        {"tag": "p", "attrs": {"id": "viii.i-p3"}, "old": "title", "state": "body"},
+        {"tag": "div2", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&",
+        "\\textit{cf}.": "cf."
+      }
+    },
+    {
+      "title": "The Hexæmeron",
+      "author": "St. Basil the Great",
+      "id": "hexa",
+      "triggers": [
+        {"tag": "div1", "attrs": {"id": "viii"}, "state": "title"}, 
+        {"tag": "div2", "attrs": {"id": "viii.ii"}, "old": "title", "state": "body"},
+        {"tag": "div1", "old": "body", "state": "done"}
+      ],
+      "replacements": {
+        "&": "\\&",
+        "\\textit{cf}.": "cf.",
+        "note on p.\n70": "note on p. \\pageref{fn:hexa:139}",
+        "note on p. 70": "note on p. \\pageref{fn:hexa:139}",
+        "note on p.\n90": "note on p. \\pageref{fn:hexa:247}",
+        "note on \\textit{Hom}. v. p. 76.": "note on p. \\pageref{fn:hexa:174}",
+        "Homily\nII.\n\n\\textit{``The Earth was Invisible and\nUnfinished}.\"\\footnote{Gen. i. 2, LXX.\n\n}": "\\section[Homily II - The Earth was Invisible and Unfinished]{Homily II - The Earth was Invisible and Unfinished\\footnote{Gen. i. 2, LXX.}}"
+      },
+      "substitutions": {
+        "(?m)^Homily\\s*([IVX]+)\\.?\\s*\n\\s*([\\w\\s\\.\"'“”‘’`,;-]+)(?=\\.?\n\n)": "\\\\section{Homily \\1 - \\2}",
+        "(?m)^Homily\\s*([IVX]+)\\.?\\s*\n\\s*(?:\\\\text[bi][ft]\\{([\\w\\s\\.\"'“”‘’`,;-]+)\\.?\\})(?=\\.?(\n\n|\\\\footnote))": "\\\\section{Homily \\1 - \\2}",
+        "\\\\section": "\\\\setcounter{footnote}{0}\\\\section"
+      }
+    }
+  ],
+  "debug": false
+}

@@ -1,0 +1,89 @@
+{
+  "title": "The Confessions of Saint Augustine",
+  "author": "St. Augustine",
+  "translator": "Edward B. Pusey, D.D. (1800-1882)",
+  "editor": "Philip Schaff (1819-1893)",
+  "year_published": "",
+  "publisher_info": "Gulu, Uganda",
+  "link": "https://ccel.org/ccel/augustine/confess.xml",
+  "chapters": [
+    {
+      "title": "Book I",
+      "header": "Confessions | Book I",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book I"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book II",
+      "header": "Confessions | Book II",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book II"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book III",
+      "header": "Confessions | Book III",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book III"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book IV",
+      "header": "Confessions | Book IV",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book IV"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book V",
+      "header": "Confessions | Book V",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book V"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    }, {
+      "title": "Book VI",
+      "header": "Confessions | Book VI",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book VI"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book VII",
+      "header": "Confessions | Book VII",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book VII"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book VIII",
+      "header": "Confessions | Book VIII",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book VIII"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book IX",
+      "header": "Confessions | Book IX",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book IX"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book X",
+      "header": "Confessions | Book X",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book X"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book XI",
+      "header": "Confessions | Book XI",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book XI"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book XII",
+      "header": "Confessions | Book XII",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book XII"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Book XIII",
+      "header": "Confessions | Book XIII",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Book XIII"}, "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    }
+  ],
+  "debug": true
+}

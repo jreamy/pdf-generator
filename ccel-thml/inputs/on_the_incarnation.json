@@ -1,0 +1,58 @@
+{
+  "title": "On the Incarnation of the Word",
+  "author": "St. Athanasius",
+  "translator": "",
+  "editor": "",
+  "year_published": "",
+  "publisher_info": "",
+  "link": "https://ccel.org/ccel/a/athanasius/incarnation.xml",
+  "chapters": [
+    {
+      "title": "Creation and the Fall",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 1. Creation and the Fall"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "The Divine Dilemma and Its Solution in the Incarnation",
+      "header": "The Divine Dilemma and Its Solution",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 2. The Divine Dilemma and Its Solution in the Incarnation"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "The Divine Dilemma and Its Solution in the Incarnation | Continued",
+      "header": "The Divine Dilemma and Its Solution | Continued",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 3. The Divine Dilemma and Its Solution in the Incarnation—Continued"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "The Death of Christ",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 4. The Death of Christ"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "The Resurrection",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 5. The Resurrection"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    }, {
+      "title": "Refutation of the Jews",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 6. Refutation of the Jews"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Refutation of the Gentiles",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 7. Refutation of the Gentiles"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Refutation of the Gentiles | Continued",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 8. Refutation of the Gentiles—Continued"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    },
+    {
+      "title": "Conclusion",
+      "triggers": [{"tag": "div1", "attrs": {"title": "Chapter 9. Conclusion"}, "state": "title"}, {"tag": "b", "old": "title", "state": "body"}, {"tag": "div1", "old": "body", "state": "done"}],
+      "replacements": {}
+    }
+  ],
+  "debug": true
+}

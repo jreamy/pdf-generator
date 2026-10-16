@@ -1,0 +1,130 @@
+\documentclass{book}
+\usepackage{layout}
+\usepackage{geometry}
+\usepackage[pagestyles]{titlesec}
+\usepackage{csquotes}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{emptypage}
+\usepackage{needspace}
+\usepackage{float}
+\usepackage{cmap}
+\usepackage{lmodern}
+
+\emergencystretch=1em
+\pdfgentounicode=1
+
+% --- Prevent Widows and Orphans ---
+\widowpenalty=10000
+\clubpenalty=10000
+
+% --- Prevent Vertical Spacing Stretching ---
+\raggedbottom
+
+\geometry{
+ papersize={5.5in, 8.5in},
+}
+
+\newpagestyle{mystyle}
+{\sethead[\thepage][\textit{\worktitle}][]{}{\workauthor}{\thepage}}
+\pagestyle{mystyle}
+
+% 1. Define your exact desired distance between text and the block
+\newlength{\blockspacing}
+\setlength{\blockspacing}{8pt} % Alter this to change the space globally
+
+% 2. Create a hidden box to temporarily store and measure your content
+\newsavebox{\specialblockbox}
+
+% 3. The non-floating fixed block container
+\newenvironment{fixedblock}{%
+  \par
+  \addvspace{\blockspacing}
+  \noindent
+  \begin{minipage}{\textwidth}
+}{%
+  \end{minipage}
+  \par
+  \addvspace{\blockspacing}
+}
+
+% 4. The dynamic wrapper
+\newcommand{\placespecialblock}[1]{%
+  % A. Save the content inside our measurement box
+  \sbox{\specialblockbox}{\begin{minipage}{\textwidth}#1\end{minipage}}%
+  %
+  % B. Calculate the exact space required: 
+  %    Height (\ht) + Depth (\dp) of the block + spacing + 2 lines of text buffer
+  \needspace{\dimexpr\ht\specialblockbox + \dp\specialblockbox + \blockspacing + 2\baselineskip\relax}%
+  %
+  % C. Render the actual block safely
+  \begin{fixedblock}
+    #1
+  \end{fixedblock}%
+}
+
+% Define a custom float environment that doesn't affect standard figure/table lists
+% Arguments: {name}{default placement}{file extension for list of...}
+\newfloat{specialblock}{h!}{los}
+
+\titleformat{\chapter}[display]
+  {\centering\Huge\itshape} % Font formatting for the whole heading
+  {}                        % No chapter number
+  {}                        % space after chapter title
+  {} 
+
+% This macro creates a full-page layout for any chapter you want to feature this way.
+\newcommand{\fullpagechapter}[4]{% 1: Title, 2: Subtitle, 3: Author, 4: Year
+    \chapter{#1}    
+    \thispagestyle{empty} % Removes headers/footers from this special page
+
+    \begin{center}
+        
+        %--- SUBTITLE ---
+        {\Large\itshape #2}
+        
+        \vfill
+        \rule{4cm}{0.4pt} % Clean divider rule
+        \vfill
+        
+        %--- AUTHOR ---
+        {\LARGE\scshape #3}
+
+        %--- YEAR ---
+        {\small\scshape #4}
+
+        \vfill
+    \end{center}
+    \newpage % Forces the actual text of the chapter to start on the next page
+}
+
+\begin{document}  
+\begin{titlepage}
+    \centering
+    \vfill
+    \vspace*{\fill}
+    
+    %--- TITLE ---
+    {\Huge\itshape ``{{title}}''} \\
+    \vspace{0.8cm}
+    
+    %--- SUBTITLE ---
+    {\Large\itshape {{subtitle}}}
+    
+    \vspace{2.5cm}
+    \rule{4cm}{0.4pt} % Clean divider rule
+    \vspace{2.5cm}
+    
+    %--- AUTHOR ---
+    {\LARGE\scshape {{author}}} \\
+    
+    \vfill
+\end{titlepage}
+
+\def\worktitle{{{title}}}
+\def\workauthor{{{author}}}
+
+{{body}}
+
+\cleardoublepage
+\end{document}

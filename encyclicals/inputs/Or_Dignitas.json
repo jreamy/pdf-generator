@@ -1,0 +1,10 @@
+{
+  "title": "Orientalium Dignitas",
+  "subtitle": "On the Churches of the East",
+  "author": "Pope Leo XIII",
+  "link": "https://www.papalencyclicals.net/leo13/l13orient.htm",
+  "triggers": [{"data": "1. Mt 2.2.", "old": "body", "state": "footnotes"}, {"data": "ENGLISH TRANSLATION: Edward Stickland, 1996.", "old": "footnotes", "state": "done"}],
+  "year": 1894,
+  "format": "chapter",
+  "debug": true
+}
