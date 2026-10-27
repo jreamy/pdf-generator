@@ -6,7 +6,7 @@
   "year_published": 1895,
   "publisher_info": "Crownedge Printing\\\\\nGulu, Uganda",
   "link": "https://www.ccel.org/ccel/s/schaff/npnf208.xml",
-  "margins": "inner=0.8in, outer=.70in, top=.75in, bottom=.66in",
+  "margins": "inner=20mm, outer=15mm, top=18mm, bottom=15mm",
   "chapters": [
     {
       "title": "Preface to The Hexæmeron",
