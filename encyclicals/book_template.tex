@@ -8,11 +8,13 @@
 \usepackage{emptypage}
 \usepackage{needspace}
 \usepackage{float}
-\usepackage{cmap}
 \usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage[para]{footmisc}
+\setmainfont{Times New Roman}
 
 \emergencystretch=1em
-\pdfgentounicode=1
 
 % --- Prevent Widows and Orphans ---
 \widowpenalty=10000
@@ -63,15 +65,15 @@
 % Arguments: {name}{default placement}{file extension for list of...}
 \newfloat{specialblock}{h!}{los}
 
-\titleformat{\chapter}[display]
+\titleformat{\chapter}[hang]
   {\centering\Huge\itshape} % Font formatting for the whole heading
   {}                        % No chapter number
-  {}                        % space after chapter title
-  {} 
+  {0em}                     % space after chapter title
+  {}
 
 % This macro creates a full-page layout for any chapter you want to feature this way.
 \newcommand{\fullpagechapter}[4]{% 1: Title, 2: Subtitle, 3: Author, 4: Year
-    \chapter{#1}    
+    \chapter{#1}
     \thispagestyle{empty} % Removes headers/footers from this special page
 
     \begin{center}
@@ -101,7 +103,7 @@
     \vspace*{\fill}
     
     %--- TITLE ---
-    {\Huge\bfshape {{title}}}
+    {\Huge {{title}}}
     \vspace{0.8cm}
 
     \vspace{2.5cm}

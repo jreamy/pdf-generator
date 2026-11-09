@@ -77,13 +77,13 @@ if __name__ == "__main__":
             parser = VaticanTextExtractor(**chapter)
             parser.feed(decoded_html)
 
-            chapters.append(textwrap.dedent(f"""
-            \\fullpagechapter{{{chapter["title"]}}}{{{chapter["subtitle"]}}}{{{chapter["author"]}}}{{{chapter["year"]}}}
-            \\def\\worktitle{{{chapter["title"]}}}
-            \\def\\workauthor{{{chapter["author"]}}}
+            chapters.append(f"""
+\\fullpagechapter{{{chapter["title"]}}}{{{chapter["subtitle"]}}}{{{chapter["author"]}}}{{{chapter["year"]}}}
+\\def\\worktitle{{{chapter["title"]}}}
+\\def\\workauthor{{{chapter["author"]}}}
 
-            {{{parser.get_clean_text(numbered_footnotes="papalencyclicals.net" in chapter["link"])}}}
-            """))
+{{{parser.get_clean_text(numbered_footnotes="papalencyclicals.net" in chapter["link"])}}}
+""")
         
         with open("book_template.tex", "r") as f:
             template = f.read()
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         f.write(text)
         
     result = subprocess.run(
-        ['pdflatex', '-interaction=nonstopmode', os.path.basename(texfile)],
+        ['xelatex', '-interaction=nonstopmode', os.path.basename(texfile)],
         capture_output=True,
         text=True,
         cwd="build"

@@ -10,9 +10,12 @@
 \usepackage{float}
 \usepackage{cmap}
 \usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage[para]{footmisc}
+\setmainfont{Times New Roman}
 
 \emergencystretch=1em
-\pdfgentounicode=1
 
 % --- Prevent Widows and Orphans ---
 \widowpenalty=10000
@@ -67,7 +70,7 @@
 % Arguments: {name}{default placement}{file extension for list of...}
 \newfloat{specialblock}{h!}{los}
 
-\titleformat{\chapter}[display]
+\titleformat{\chapter}[hang]
   {\centering\Huge\itshape} % Font formatting for the whole heading
   {}                        % No chapter number
   {}                        % space after chapter title
